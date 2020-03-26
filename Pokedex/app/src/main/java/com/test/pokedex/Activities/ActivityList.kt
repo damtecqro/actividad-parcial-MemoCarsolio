@@ -11,6 +11,7 @@ import com.google.gson.JsonObject
 import com.koushikdutta.ion.Ion
 import com.test.pokedex.Adapters.AdapterList
 import com.test.pokedex.R
+import androidx.recyclerview.widget.GridLayoutManager
 
 import kotlinx.android.synthetic.main.activity_list.*
 import org.json.JSONArray
@@ -46,10 +47,7 @@ class ActivityList : AppCompatActivity() {
     }
 
     fun initializeListeners(){
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+
     }
 
     fun initializeData(){
